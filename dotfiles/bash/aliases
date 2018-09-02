@@ -1,0 +1,15 @@
+# processes
+alias tu='top -o %CPU' #cpu
+alias tm='top -o %MEM' #memory
+
+# fs
+alias ..='cd ..'
+alias cdd='cd -'
+
+function take {
+  mkdir $1
+  cd $1
+}
+
+# git
+alias g='git status'

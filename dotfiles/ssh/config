@@ -1,0 +1,27 @@
+#aogurtsov bitbucket account
+ Host bitbucket.org-aogurtsov
+     HostName bitbucket.org
+     User git
+     IdentityFile ~/.ssh/aogurtsov
+     IdentitiesOnly yes
+
+#tapok_work bitbucket account
+ Host bitbucket.org-tapok_work
+     HostName bitbucket.org
+     User git
+     IdentityFile ~/.ssh/tapok_work
+     IdentitiesOnly yes
+
+#tapok_codegenix bitbucket account
+ Host bitbucket.org-tapok_codegenix
+	HostName bitbucket.org
+	User git
+	IdentityFile ~/.ssh/tapok_codegenix
+	IdentitiesOnly yes
+
+
+# SSH-aliases
+# sdwan
+Host sdwan
+  HostName 172.16.2.62
+  User root
