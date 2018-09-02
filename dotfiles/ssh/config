@@ -21,7 +21,7 @@
 
 
 # SSH-aliases
-# sdwan
-Host sdwan
-  HostName 172.16.2.62
-  User root
+Host host_alias
+  HostName 192.168.1.1
+  User user_name
+  Port 22
