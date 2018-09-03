@@ -13,3 +13,11 @@ function take {
 
 # git
 alias g='git status'
+
+# sdwan
+alias sdwan_auth="cd ~/WebstormProjects/sd-wan && java -jar sdwan-auth-vpn-server/target/sdwan-auth-vpn-server-0.1.3.jar"
+alias sdwan_gw="cd ~/WebstormProjects/sd-wan && java -jar sdwan-gateway-worker/target/sdwan-gateway-worker-0.1.3.jar"
+alias sdwan_cpe="cd ~/WebstormProjects/sd-wan && java -jar -Dthread=c2ab8476a0b9e3791ced06051a07d282 -Dcoun=US -Dorg=SdwanTest -Dcn=client000001 sdwan-cpe-worker/target/sdwan-cpe-worker-0.1.3.jar"
+
+# bash
+alias bash_reload='source ~/.bashrc'
