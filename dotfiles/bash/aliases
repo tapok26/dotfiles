@@ -18,6 +18,8 @@ alias g='git status'
 alias sdwan_auth="cd ~/WebstormProjects/sd-wan && java -jar sdwan-auth-vpn-server/target/sdwan-auth-vpn-server-0.1.3.jar"
 alias sdwan_gw="cd ~/WebstormProjects/sd-wan && java -jar sdwan-gateway-worker/target/sdwan-gateway-worker-0.1.3.jar"
 alias sdwan_cpe="cd ~/WebstormProjects/sd-wan && java -jar -Dthread=c2ab8476a0b9e3791ced06051a07d282 -Dcoun=US -Dorg=SdwanTest -Dcn=client000001 sdwan-cpe-worker/target/sdwan-cpe-worker-0.1.3.jar"
+alias sdwan_ui="cd ~/WebstormProjects/sd-wan/sdwan-gui && npm start"
+alias sdwan_deploy="cd ~/WebstormProjects/sd-wan/sdwan-gui && npm run build && mv build sd-wan_gui && mv sd-wan_gui/ ../ && scp -r ../sd-wan_gui dev@172.16.2.62:~/"
 
 # bash
 alias bash_reload='source ~/.bashrc'
