@@ -21,7 +21,10 @@
 
 
 # SSH-aliases
-Host host_alias
-  HostName 192.168.1.1
-  User user_name
-  Port 22
+
+#sdwan dev server (deploy)
+ Host sdwan_dev
+  	HostName 172.16.2.62
+	User dev
+	IdentityFile ~/.ssh/sdwan_dev
+	Port 22
