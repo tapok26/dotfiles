@@ -6,10 +6,10 @@
      IdentitiesOnly yes
 
 #tapok_work bitbucket account
- Host bitbucket.org-tapok_work
+ Host bitbucket.org-edubinskii_sdnsystems
      HostName bitbucket.org
      User git
-     IdentityFile ~/.ssh/tapok_work
+     IdentityFile ~/.ssh/edubinskii_sdnsystems
      IdentitiesOnly yes
 
 #tapok_codegenix bitbucket account
@@ -27,4 +27,11 @@
   	HostName 172.16.2.62
 	User dev
 	IdentityFile ~/.ssh/sdwan_dev
+	Port 22
+
+#dynanetix server
+ Host dynanetix
+  	HostName 68.183.126.37
+	User root
+	IdentityFile ~/.ssh/dynanetix
 	Port 22
