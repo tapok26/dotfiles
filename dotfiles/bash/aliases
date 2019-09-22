@@ -1,6 +1,7 @@
 # processes
 alias tu='top -o %CPU' #cpu
 alias tm='top -o %MEM' #memory
+alias tt='open -a TextEdit' #editor
 
 # fs
 alias ..='cd ..'
@@ -16,6 +17,8 @@ alias g='git status'
 
 # sdwan
 alias sdwan_deploy="cd ~/WebstormProjects/sdwan_gui && npm run build && mv build sd-wan_gui_s2s && scp -r ./sd-wan_gui_s2s sdwan_dev:~/ && rm -rf ./sd-wan_gui_s2s"
+alias sdwan_vpn="sudo openvpn —config /etc/openvpn/edub.ovpn"
+
 
 # bash
-alias reload_bash="source ~/.bashrc"
+alias reload_bash="source ~/.bash_profile"
