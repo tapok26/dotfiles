@@ -1,17 +1,29 @@
 # dotfiles
 A bunch of config files
 
-<b><i>bashrc</i></b> just include all of bash config files <br/>
-<b><i>bash/aliases</i></b> contains aliases of the most frequently used commands and functions to make it reusable and dynamic <br/>
-<b><i>bash/env</i></b> contains variable of environment and custom variables <br/>
-<b><i>bash/config</i></b> defines configuration of prompt line <br/>
-<b><i>ssh/config</i></b> contains ssh connections aliases and required data to make connection easier <br/>
+<ul>
+  <li>
+    <b><i>bashrc</i></b> includes all of bash config files
+  </li>
+  <li>
+    <b><i>bash/aliases</i></b> contains aliases of the most frequently used commands and functions to make it reusable and dynamic
+  </li>
+  <li>
+    <b><i>bash/env</i></b> contains environment and custom variables
+  </li>
+  <li>
+    <b><i>bash/config</i></b> defines prompt line configuration
+  </li>
+  <li>
+    <b><i>ssh/config</i></b> contains ssh connection aliases and data to make connection easier
+  </li>
+</ul>
 
-In order to use bash custom settings you need to include the entry point file to your ~/.bashrc: <br/>
+In order to use bash custom settings you need to include the entry point file to your <code>~/.bashrc:</code> <br/>
 <code>. /path/to/dotfiles/bashrc</code>
 
-To load changes execute: <br/>
+To apply changes execute: <br/>
 <code>source /path/to/dotfiles/bashrc</code> <br/>
 
-In order to use ssh config file its better to move ~/.ssh/config file content to /path/to/dotfiles/ssh/config and create a symbolic link: <br/>
+In order to use ssh config file its better to move <i>~/.ssh/config</i> file content to /path/to/dotfiles/ssh/config and create a symbolic link: <br/>
 <code>ln -s /path/to/dotfiles/ssh/config ~/.ssh/config</code>
